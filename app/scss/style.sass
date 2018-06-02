@@ -51,18 +51,18 @@ body
     margin: 0 2%
   +breakpoint(1080px)
     margin-top: 3%
-  +breakpoint(1027px)
+  +breakpoint(1028px)
     left: 8%
     margin-top: 5%
-  +breakpoint(867px)
-    // width: 130px
+  +breakpoint(868px)
+    // width: 157px
     position: absolute
-    display: flex
-    flex-direction: row
     text-align: center
     top: -3.5%
     margin-left: 55%
     display: none
+  +breakpoint(487px)
+    flex-direction: row
   &-links
     font-size: 14px
     margin-right: 30px
@@ -116,6 +116,10 @@ body
     max-width: 1170px
     margin: 0 auto
     overflow: hidden
+    +breakpoint(583px)
+      text-align: center
+      display: flex
+      justify-content: center
     &__descr
       margin-top: 20%
       margin-bottom: 22%
@@ -123,15 +127,127 @@ body
         line-height: 30px
         font-size: 56px
         color: #fff
+        +breakpoint(583px)
+          line-height: 22px
+          font-size: 40px
       &--second
         font-size: 40px
         color: #fff
+        +breakpoint(583px)
+          font-size: 32px
       &--yellow
         font-size: 40px
         color: yellow
+        +breakpoint(583px)
+          font-size: 32px
 
 
 
+.reservation
+  overflow: hidden
+  background: #edf1f3
+  &-inner
+    width: 100%
+    max-width: 1170px
+    margin: 0 auto
+    overflow: hidden
+  &-info
+    display: flex
+    justify-content: center
+    // text-align: center
+    img
+      margin-right: 2%
+      margin-top: 1.5%
+      min-width: 37px
+      height: 37px
+  &-call
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 1%
+    margin-right: 5%
+    margin-left: 2%
+    &__black,
+    &__yellow
+      font-weight: 700
+      font-size: 14px
+      line-height: 20px
+    &__black
+      color: #14141d
+    &__yellow
+      color: #fea100
+  &-number
+    display: flex
+    align-items: center
+    span
+      color: #14141d
+      font-style: 32px
+      font-weight: 700
+
+
+.about
+  margin-top: 6%
+  overflow: hidden
+  &-info
+    width: 50%
+    h1
+      font-size: 35px
+      line-height: 22px
+      color: rgb(20,20,29)
+      margin-bottom: 3.5%
+    &__descr
+      width: 95%
+      font-size: 16px
+      line-height: 26px
+      color: rgb(92,99,105)
+      margin-bottom: 3%
+    &__btn
+      display: inline-block
+      text-align: center
+      width: 155px
+      min-width: 155px
+      height: 55px
+      background-color: #fda100
+      border-radius: 4px
+      text-decoration: none
+      list-style: none
+      p
+        margin-top: 10px
+        font-size: 14px
+        line-height: 30px
+        color: rgb(255,255,255)
+
+  &-cards
+    width: 50%
+    display: flex
+    &__first
+      width: 50%
+      margin-top: 5%
+      &--top,
+      &--bottom
+        width: 100%
+        min-width: 270px
+      &--top
+        margin-bottom: 10px
+    &__second
+      width: 50%
+      &--top,
+      &--bottom
+        width: 100%
+        min-width: 270px
+      &--top
+        margin-bottom: 10px
+
+
+.about-inner
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+  overflow: hidden
+  display: flex
+
+// .about-info, .about-cards
+//   width: 50%
 
 
 
