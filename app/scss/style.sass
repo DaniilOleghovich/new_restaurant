@@ -22,6 +22,8 @@ body
   overflow: hidden
   display: flex
   flex-wrap: wrap
+  a
+    text-decoration: none
   +breakpoint(867px)
     flex-direction: column
   &__btn
@@ -85,6 +87,7 @@ body
   background-color: #fda100
   border: 1px solid #7d797b
   border-radius: 4px
+  text-decoration: none
   &--active
     display: flex
   +breakpoint(867px)
@@ -98,6 +101,7 @@ body
     font-size: 14px
     font-family: "PT Sans",sans-serif
     font-style: italic
+
     // padding: 10px
 
 
@@ -215,11 +219,13 @@ body
         margin-top: 10px
         font-size: 14px
         line-height: 30px
+        font-weight: 700
         color: rgb(255,255,255)
 
   &-cards
     width: 50%
     display: flex
+    // flex-wrap: wrap
     &__first
       width: 50%
       margin-top: 5%
@@ -238,7 +244,6 @@ body
       &--top
         margin-bottom: 10px
 
-
 .about-inner
   width: 100%
   max-width: 1170px
@@ -246,11 +251,60 @@ body
   overflow: hidden
   display: flex
 
-// .about-info, .about-cards
-//   width: 50%
 
 
 
+.special
+  overflow: hidden
+  background: #fff
+  margin-top: 2%
+  // +breakpoint(867px)
+  //   margin-top: 5%
+  // +breakpoint(583px)
+  //   margin-top: 12%
+
+  &__first
+    overflow: hidden
+    background: #fff url(../images/third-bg.png) center left no-repeat
+    background-size: cover
+    &--inner
+      width: 100%
+      max-width: 1170px
+      margin: 0 auto
+      overflow: hidden
+      text-align: center
+      padding: 100px 0 310px
+      span
+        font-size: 35px
+        line-height: 22px
+        color: #fff
+  &-inner
+    width: 100%
+    height: 50vh
+    max-width: 1170px
+    margin: 0 auto
+    overflow: hidden
+
+.card
+  width: 45%
+  border: none
+  text-align: center
+  position: absolute
+  margin-top: -23%
+  &__second
+    margin-left: 50%
+    &--back
+      height: 420px
+      background: url(../images/card2.png) center center no-repeat
+      background-size: cover
+  &-back
+    height: 420px
+    background: url(../images/card1.png) center center no-repeat
+    background-size: cover
+  &-footer
+    display: flex
+    justify-content: space-between
+    border: none
 
 
 // $padding: 213px
