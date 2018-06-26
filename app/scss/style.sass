@@ -362,17 +362,50 @@ body
     h2
       color: #fff
 
+.food
+  display: flex
+  +breakpoint(583px)
+    // margin-top: 5%
+    flex-wrap: wrap
 .card
   width: 50%
   text-align: center
-  // margin-top: 350px
-  &-inner
-    display: flex
-    +breakpoint(583px)
-      // margin-top: 5%
-      flex-wrap: wrap
+  border: none
+  box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09)
+  h3
+    font-weight: 700
+    margin-top: 50px
+  &-details
+    margin: 0 auto
+    width: 75%
+    span
+      color: #5c6369
+      font-size: 14px
   &__first
     margin-right: 50px
+  &-footer
+    display: flex
+    justify-content: space-between
+    margin-top: 60px
+    border: none
+    background-color: #fff
+    &__home
+      text-transform: uppercase
+      display: flex
+      flex-direction: column
+      font-weight: 700
+      font-size: 13px
+      span
+        color: #fe4c8d
+    &__phone
+      color: #14141d
+      font-size: 26px
+      font-weight: 700
+    &__price
+      font-size: 30px
+      color: #fea100
+      font-weight: 700
+
 
 
 

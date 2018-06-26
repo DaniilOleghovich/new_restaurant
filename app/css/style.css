@@ -258,13 +258,47 @@ body {
     .special-inner h2 {
       color: #fff; }
 
+.food {
+  display: flex; }
+  @media screen and (max-width: 583px) {
+    .food {
+      flex-wrap: wrap; } }
+
 .card {
   width: 50%;
-  text-align: center; }
-  .card-inner {
-    display: flex; }
-    @media screen and (max-width: 583px) {
-      .card-inner {
-        flex-wrap: wrap; } }
+  text-align: center;
+  border: none;
+  box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09); }
+  .card h3 {
+    font-weight: 700;
+    margin-top: 50px; }
+  .card-details {
+    margin: 0 auto;
+    width: 75%; }
+    .card-details span {
+      color: #5c6369;
+      font-size: 14px; }
   .card__first {
     margin-right: 50px; }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    border: none;
+    background-color: #fff; }
+    .card-footer__home {
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      font-size: 13px; }
+      .card-footer__home span {
+        color: #fe4c8d; }
+    .card-footer__phone {
+      color: #14141d;
+      font-size: 26px;
+      font-weight: 700; }
+    .card-footer__price {
+      font-size: 30px;
+      color: #fea100;
+      font-weight: 700; }
